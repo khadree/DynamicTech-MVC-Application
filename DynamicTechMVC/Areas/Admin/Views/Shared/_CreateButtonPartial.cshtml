@@ -1,0 +1,11 @@
+﻿@model int
+@{
+    if (Model == 0)
+    {
+        <a asp-action="Create" class="btn btn-outline-info">Create New</a>
+    }
+    else
+    {
+        <a asp-action="Create" class="btn btn-outline-info" asp-route-CategoryId="@Model">Create New</a>
+    }
+} 
